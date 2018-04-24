@@ -1,0 +1,17 @@
+PODS:
+  - Mixpanel (3.0.6):
+    - Mixpanel/Mixpanel (= 3.0.6)
+  - Mixpanel/Mixpanel (3.0.6)
+  - OneSignal (2.2.3)
+
+DEPENDENCIES:
+  - Mixpanel
+  - OneSignal
+
+SPEC CHECKSUMS:
+  Mixpanel: c462992e6fe84d74a8d0408c0b25852ddd067e4b
+  OneSignal: 5fb2b0bce3be5a7cbb5f2d357e26f03a96c4859a
+
+PODFILE CHECKSUM: 83835dd73a5bc7bdbf9dd7384abfbd17148916e6
+
+COCOAPODS: 1.1.1

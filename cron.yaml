@@ -1,0 +1,17 @@
+version: 1
+cron:
+  - name: "add-news"
+    url: "/background/import_news"
+    schedule: "*/10 * * * *"
+  - name: "add-posts"
+    url: "/background/import_posts"
+    schedule: "*/10 * * * *"
+  - name: "tag-news"
+    url: "/background/tag_articles"
+    schedule: "0 * * * *"
+  - name: "tag-posts"
+    url: "/background/tag_posts"
+    schedule: "0 * * * *"
+  - name: "send-daily-notifications"
+    url: "/background/send_daily_notifications"
+    schedule: "30 8 * * *"

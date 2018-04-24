@@ -1,0 +1,86 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gigsaloon"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <permission
+        android:name="${applicationId}.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="${applicationId}.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <application
+      android:name=".MainApplication"
+      android:allowBackup="true"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:theme="@style/AppTheme">
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+        android:screenOrientation="portrait"
+        android:launchMode="singleTop">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        <intent-filter android:label="filter_react_native">
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <!-- Accepts URIs that begin with "http://www.thegigsaloon.com/posts/ -->
+            <data android:scheme="http"
+                  android:host="www.thegigsaloon.com"
+                  android:pathPrefix="/posts/" />
+            <!-- note that the leading "/" is required for pathPrefix-->
+            <!-- Accepts URIs that begin with "thegigsaloon://post -->
+            <data android:scheme="thegigsaloon"
+                  android:host="post" />
+            <!-- Accepts URIs that begin with "thegigsaloon://home -->
+            <data android:scheme="thegigsaloon"
+                  android:host="home" />
+            <!-- Accepts URIs that begin with "thegigsaloon://news -->
+            <data android:scheme="thegigsaloon"
+                  android:host="news" />
+            <!-- Accepts URIs that begin with "thegigsaloon://job -->
+            <data android:scheme="thegigsaloon"
+                  android:host="job" />
+            <!-- Accepts URIs that begin with "thegigsaloon://jobs -->
+            <data android:scheme="thegigsaloon"
+                  android:host="jobs" />
+
+        </intent-filter>
+      </activity>
+      <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+      <activity android:name="com.mixpanel.android.surveys.SurveyActivity"
+          android:theme="@style/com_mixpanel_android_SurveyActivityTheme" />
+
+      <activity android:name="com.facebook.FacebookActivity"
+          android:configChanges=
+                 "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+          android:theme="@style/com_facebook_activity_theme"
+          android:label="@string/app_name" />
+
+      <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/FACEBOOK_APP_ID"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="" />
+    </application>
+
+</manifest>

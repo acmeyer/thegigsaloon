@@ -1,0 +1,11 @@
+require('./cloud/tests');
+require('./cloud/posts.js');
+require('./cloud/comments.js');
+require('./cloud/filters.js');
+require('./cloud/user.js');
+require('./cloud/jobs.js');
+require('./cloud/articles.js');
+require('./cloud/login.js');
+require('./cloud/reviews.js');
+require('./cloud/tags.js');
+require('./cloud/notifications.js');

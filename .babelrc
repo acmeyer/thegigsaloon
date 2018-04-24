@@ -1,0 +1,7 @@
+{
+  "passPerPreset": true,
+  "presets": ["react-native"],
+  "plugins": [
+    "transform-class-properties"
+  ]
+}

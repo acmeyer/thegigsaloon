@@ -1,0 +1,145 @@
+body#homepage {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background-image: url(hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 600px;
+}
+.hero .logo {
+  width: 100px;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-size: 8rem;
+  margin-bottom: 3rem;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+.hero h4 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: white;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.hero .help-block {
+  color: white;
+}
+.hero .input-lg {
+  height: 60px;
+}
+.hero .btn-lg {
+  height: 60px;
+}
+
+.hero form label.error {
+  color: #d9534f;
+}
+
+.hero .response#mce-success-response {
+  text-align: center;
+}
+.hero .response#mce-success-response h2 {
+  color: #7fea7f;
+}
+.hero .response#mce-success-response p {
+  color: white;
+  font-size: 2rem;
+}
+
+.hero .footer-nav {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #0197F6;
+  border: none;
+}
+
+.actions {
+  margin: 25px auto;
+  text-align: center;
+}
+
+.actions a {
+  padding: 5px;
+  display: inline-block;
+}
+
+.actions a img {
+  height: 60px;
+}
+
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+  }
+
+  .hero h4 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: normal;
+  }
+
+  .hero .input-lg {
+    height: 46px;
+  }
+  .hero .btn-lg {
+    height: 46px;
+  }
+
+  .actions a img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero .input-lg {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+  }
+  .hero .btn-lg {
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+  }
+}
