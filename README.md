@@ -2,7 +2,7 @@
 
 An app to find gigs, apply, review, and learn more about them.
 
-[Original blog post](https://blog.thegigsaloon.com/announcing-the-gig-saloon-ecb197fdd326)
+[Original blog post](https://alexcmeyer.medium.com/announcing-the-gig-saloon-ecb197fdd326)
 
 The app is no longer actively maintained or in the App Store so here's the open source code in case anyone else wants to use it in anyway.
 
