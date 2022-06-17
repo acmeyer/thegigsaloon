@@ -24,7 +24,7 @@
     "node-geocoder": "^3.13.1",
     "parse": "^1.9.2",
     "parse-dashboard": "^1.0.19",
-    "parse-server": "^2.2.25-beta.1",
+    "parse-server": "^4.10.11",
     "parse-server-onesignal-push-adapter-scheduled-push-version": "^1.0.1",
     "react": "15.3.2",
     "react-addons-update": "15.3.2",
