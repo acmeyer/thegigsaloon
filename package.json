@@ -13,7 +13,7 @@
     "crc32": "^0.2.2",
     "eslint": "^3.4.0",
     "eslint-plugin-react": "^6.1.2",
-    "express": "^4.13.4",
+    "express": "^4.17.3",
     "feedparser-promised": "^1.1.1",
     "google-libphonenumber": "^2.0.5",
     "html-metadata": "1.4.1",
